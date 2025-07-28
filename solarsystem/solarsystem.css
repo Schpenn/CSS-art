@@ -1,0 +1,141 @@
+body {
+  background: black;
+}
+.planet {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes orbit {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.sun {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  background: yellow;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%);
+}
+
+.neptune-orbit {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 95vw;
+  transform: translate(-50%, -50%);
+  animation: orbit 40s linear infinite;
+}
+.neptune {
+  background: rgb(130, 130, 192);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.uranus-orbit {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 85vw;
+  transform: translate(-50%, -50%);
+  animation: orbit 30s linear infinite;
+}
+.uranus {
+  background: lightblue;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.saturn-orbit {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 75vw;
+  transform: translate(-50%, -50%);
+  animation: orbit 22s linear infinite;
+}
+.saturn {
+  background: rgb(179, 159, 51);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+.jupiter-orbit {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 65vw;
+  transform: translate(-50%, -50%);
+  animation: orbit 20s linear infinite;
+}
+.jupiter {
+  background: rgb(218, 127, 53);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.mars-orbit {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 55vw;
+  transform: translate(-50%, -50%);
+  animation: orbit 15s linear infinite;
+}
+.mars {
+  background: red;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.earth-orbit {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 45vw;
+  transform: translate(-50%, -50%);
+  animation: orbit 10s linear infinite;
+}
+.earth {
+  background: blue;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+.venus-orbit {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 35vw;
+  transform: translate(-50%, -50%);
+  animation: orbit 8s linear infinite;
+}
+.venus {
+  background: rgb(218, 86, 9);
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+.mercury-orbit {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 25vw;
+  transform: translate(-50%, -50%);
+  animation: orbit 5s linear infinite;
+}
+.mercury {
+  background: rgb(241, 98, 2);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
