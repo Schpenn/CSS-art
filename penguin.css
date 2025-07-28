@@ -1,0 +1,123 @@
+.head {
+  position: relative;
+  width: 150px;
+  height: 200px;
+  background: black;
+  border-radius: 50%;
+  margin: auto;
+}
+.face {
+  position: absolute;
+  width: 70px;
+  height: 150px;
+  background: white;
+  border-radius: 50%;
+}
+.face-left {
+  transform: rotate(-17deg);
+  bottom: 0;
+  left: 20px;
+}
+.face-right {
+  transform: rotate(17deg);
+  bottom: 0;
+  left: 60px;
+}
+.eye {
+  background: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 30px;
+}
+.beek {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 60px solid orange;
+  margin-left: 30%;
+  margin-top: 80%;
+}
+.body {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  background: black;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: -25px;
+  z-index: -1;
+}
+
+.arm {
+  display: inline-block;
+  background: rgb(43, 42, 42);
+  position: absolute;
+  width: 25%;
+  height: 230px;
+  border-radius: 50%;
+}
+.arm-left {
+  top: 10%;
+  transform: rotate(10deg);
+}
+.arm-right {
+  top: 10%;
+  left: 75%;
+  transform: rotate(-10deg);
+}
+.chest {
+  width: 70%;
+  height: 90%;
+  background: white;
+  border-radius: 50%;
+  margin: auto;
+}
+.feet {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  z-index: -2;
+  margin: auto;
+  margin-top: -50px;
+  padding-left: 20px;
+}
+.left-foot {
+  display: inline-block;
+  width: 49%;
+  transform: rotate(10deg);
+}
+.right-foot {
+  display: inline-block;
+  width: 49%;
+  transform: rotate(-10deg);
+}
+.toe-1 {
+  position: absolute;
+  width: 20px;
+  height: 70px;
+  background: orange;
+  border-radius: 50%;
+  transform: rotate(17deg);
+  margin-left: 10px;
+}
+.toe-middle {
+  position: absolute;
+  width: 20px;
+  height: 70px;
+  background: orange;
+  border-radius: 50%;
+  margin: 0 30px;
+}
+.toe-3 {
+  position: absolute;
+  width: 20px;
+  height: 70px;
+  background: orange;
+  border-radius: 50%;
+  transform: rotate(-17deg);
+  margin-left: 50px;
+}
