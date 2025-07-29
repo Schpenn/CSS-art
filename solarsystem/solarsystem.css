@@ -1,12 +1,18 @@
 body {
   background: black;
 }
+
 .planet {
   position: absolute;
   top: 0;
   left: 0;
 }
-
+.planet:hover {
+  box-shadow: 0 0 20px 8px rgba(255, 255, 255, 0.5);
+  transform: scale(1.5);
+  z-index: 2;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
 @keyframes orbit {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
@@ -21,6 +27,7 @@ body {
   left: 50%;
   border-radius: 50%;
   background: yellow;
+  box-shadow: 0 0 50px rgba(255, 255, 0, 0.8);
   width: 100px;
   height: 100px;
   transform: translate(-50%, -50%);
@@ -30,7 +37,7 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 95vw;
+  width: 85vw;
   transform: translate(-50%, -50%);
   animation: orbit 40s linear infinite;
 }
@@ -45,7 +52,7 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 85vw;
+  width: 75vw;
   transform: translate(-50%, -50%);
   animation: orbit 30s linear infinite;
 }
@@ -59,7 +66,7 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 75vw;
+  width: 65vw;
   transform: translate(-50%, -50%);
   animation: orbit 22s linear infinite;
 }
@@ -73,7 +80,7 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 65vw;
+  width: 55vw;
   transform: translate(-50%, -50%);
   animation: orbit 20s linear infinite;
 }
@@ -87,7 +94,7 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 55vw;
+  width: 45vw;
   transform: translate(-50%, -50%);
   animation: orbit 15s linear infinite;
 }
@@ -101,7 +108,7 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 45vw;
+  width: 35vw;
   transform: translate(-50%, -50%);
   animation: orbit 10s linear infinite;
 }
@@ -115,7 +122,7 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 35vw;
+  width: 25vw;
   transform: translate(-50%, -50%);
   animation: orbit 8s linear infinite;
 }
@@ -129,7 +136,7 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 25vw;
+  width: 15vw;
   transform: translate(-50%, -50%);
   animation: orbit 5s linear infinite;
 }
@@ -138,4 +145,32 @@ body {
   width: 9px;
   height: 9px;
   border-radius: 50%;
+}
+.neptune-orbit:hover,
+.uranus-orbit:hover,
+.saturn-orbit:hover,
+.jupiter-orbit:hover,
+.mars-orbit:hover,
+.earth-orbit:hover,
+.venus-orbit:hover,
+.mercury-orbit:hover {
+  animation-play-state: paused;
+}
+.planet-tooltip {
+  display: none;
+  position: absolute;
+  top: 120%; /* below the planet */
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(30, 30, 30, 0.9);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 10;
+}
+.planet:hover .planet-tooltip {
+  display: block;
 }
